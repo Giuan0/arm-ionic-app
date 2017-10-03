@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Control
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="outer-content">
+	<ion-list>
+		<ion-list-header>
+	      Base
+	    </ion-list-header>
+		<ion-range (ionChange)="turnBase()" min="0" max="180" [(ngModel)]="base">
+	    </ion-range>
+
+	    <ion-list-header>
+	      Elbows
+	    </ion-list-header>
+	    <ion-range (ionChange)="turnRightElbow()" min="110" max="170" [(ngModel)]="rightElbow">
+	    </ion-range>
+
+
+	    <ion-range (ionChange)="turnLeftElbow()" min="110" max="180" [(ngModel)]="leftElbow">
+	    </ion-range>
+
+	    <ion-list-header>
+	      Hand
+	    </ion-list-header>
+	    <p>
+	    <button (click)="openHand()" ion-button icon-left>
+	      Open
+	    </button>
+	    <button (click)="closeHand()" ion-button icon-left>
+	      close
+	    </button>
+	    </p>
+    </ion-list>
+
+</ion-content>

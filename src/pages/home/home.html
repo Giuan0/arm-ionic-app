@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+    <button (click)="rightElbowDown()" ion-button color="light" icon-only>
+      <ion-icon name='arrow-down'></ion-icon>
+    </button>
+    <button (click)="rightElbowUp()" ion-button color="light" icon-only>
+      <ion-icon name='arrow-up'></ion-icon>
+    </button>
+
+    <button (click)="turnBaseLeft()" ion-button color="light" icon-only>
+      <ion-icon name='arrow-back'></ion-icon>
+    </button>
+    <button (click)="turnBaseRight()" ion-button color="light" icon-only>
+      <ion-icon name='arrow-forward'></ion-icon>
+    </button>
+
+    <p>
+    <button (click)="openHand()" ion-button icon-left>
+      Open
+    </button>
+    <button (click)="closeHand()" ion-button icon-left>
+      close
+    </button>
+    </p>
+
+</ion-content>
