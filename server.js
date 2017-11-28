@@ -5,8 +5,6 @@ const app = require('express')();
 app.use(cors());
 
 board.on("ready", ()=>{//quando a placa estiver pronta, então...
-  this.pinMode(7, this.MODES.OUTPUT);
-  this.digitalWrite(7, 1);
 
   const servoBase  = new five.Servo(10);//entradas no arduíno, servos
   const servoHand  = new five.Servo(12);
